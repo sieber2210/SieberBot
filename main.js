@@ -45,11 +45,11 @@ bot.on('message', message =>{
     }
 });
 
-bot.on('guildMemberAdd', member =>{
-    console.log('User ' + member.user.username + ' has joined the server!');
-    var role = member.guild.roles.cache.find(role => role.name === "Fans And Supporters");
-    member.roles.add(role).catch(console.error);
-});
+// bot.on('guildMemberAdd', member =>{
+//     console.log('User ' + member.user.username + ' has joined the server!');
+//     var role = member.guild.roles.cache.find(role => role.name === "Fans And Supporters");
+//     member.roles.add(role).catch(console.error);
+// });
 
 
 bot.login(token);
